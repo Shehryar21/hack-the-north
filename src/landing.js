@@ -96,7 +96,6 @@ class Landing extends React.Component {
       </div>
     );
 
-    
   }
 }
 
