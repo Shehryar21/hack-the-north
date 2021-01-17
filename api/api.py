@@ -38,3 +38,4 @@ def add_guide():
     doc_name = data["name"]
     db.collection(u'guides').document(doc_name).set(data)
     return json.dumps(data)
+
