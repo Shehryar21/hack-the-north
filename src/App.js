@@ -4,6 +4,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import NavBar from './components/navbar.js'
 
 const style = {
   height: 30,
@@ -45,7 +46,7 @@ class App extends React.Component {
   render() {
     return (
       <div style={style2} >
-        <h1>Virtual Tours</h1>
+        <NavBar></NavBar>
         <hr />
         
         <InfiniteScroll
