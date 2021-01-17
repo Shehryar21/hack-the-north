@@ -23,13 +23,19 @@ def get_guide():
     doc = doc_ref.get()
     return json.dumps(doc.to_dict())
 
+
 @app.route('/get')
 def get_all_guides():
-
+    city = request.args.get('city')
     docs = db.collection(u'guides').stream()
     ans = []
-    for doc in docs:
-        ans.append(doc.to_dict())
+    if city:
+        for doc in docs:
+            if doc.to_dict()["city"] == city:
+                ans.append(doc.to_dict())
+    else:
+        for doc in docs:
+            ans.append(doc.to_dict())
     return json.dumps(ans)
 
 @app.route('/add', methods=['POST'])

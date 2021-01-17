@@ -51,8 +51,9 @@ class Landing extends React.Component {
 
   render() {
     return (
+      <div>
+        <NavBar></NavBar>
       <Carousel fade={true} className="AppComp1">
-        <Button variant="btn btn-success" onClick={() => history.push('/Products')}>Click button to view products</Button>
         <Carousel.Item interval={5000}>
           <img
             className="d-block w-100"
@@ -63,7 +64,6 @@ class Landing extends React.Component {
           <h1 className="title" style={{
             fontSize: '100px'
           }}>Tours by Locals</h1>
-            <Button variant="btn btn-success" onClick={() => history.push('/Products')}>Click button to view products</Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
@@ -93,6 +93,7 @@ class Landing extends React.Component {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      </div>
     );
 
     

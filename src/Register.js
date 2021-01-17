@@ -65,7 +65,7 @@ class Registration extends React.Component {
                 <Form.Label>Description</Form.Label>
                 <Form.Control type="text" label="Enter Description" />
             </Form.Group>
-            <Button variant="primary" type="submit" to="/">
+            <Button variant="primary" type="submit" href="/home">
                 Submit
             </Button>
         </Form>
