@@ -1,7 +1,9 @@
 import React from "react";
+import { render } from "react-dom";
 import InfiniteScroll from "react-infinite-scroll-component";
 import CardDeck from 'react-bootstrap/CardDeck'
 import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
 import NavBar from './components/navbar.js'
 
 const style = {

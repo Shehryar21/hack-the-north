@@ -51,51 +51,17 @@ class Landing extends React.Component {
 
   render() {
     return (
-      <Carousel fade={true} className="AppComp1">
-        <Button variant="btn btn-success" onClick={() => history.push('/Products')}>Click button to view products</Button>
-        <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            src="https://bigseventravel.com/wp-content/uploads/2020/03/elchalten.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption className="caption">
-          <h1 className="title" style={{
-            fontSize: '100px'
-          }}>Tours by Locals</h1>
-            <Button variant="btn btn-success" onClick={() => history.push('/Products')}>Click button to view products</Button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <img
-            className="d-block w-100"
-            src="https://www.scenic.ca/-/media/scenic/australia-old/content-pages/river-cruises/european/2019/scenic-diamond.jpg?mw=1024&hash=FF304C201A65C6AFFF906CBCBE53CB5BF3F30C2C"
-            alt="Third slide"
-          />
-          <Carousel.Caption className="caption">
-          <h1 className="title" style={{
-            fontSize: '100px'
-          }}>Tours by Locals</h1>
-          <button className="myButton">View all our Guides</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://pix10.agoda.net/hotelImages/4889738/0/613e7c93f793ce121088095cd566c4ab.jpg?s=1024x768"
-            alt="Third slide"
-          />
-          <Carousel.Caption className="caption">
-          <h1 className="title" style={{
-            fontSize: '100px'
-          }}>Tours by Locals</h1>
-          <button className="myButton">View all our Guides</button>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <div className="AppComp1">
+        <div className="move">
+          <h1 className='title'>Tours By Locals</h1>
+          <Link to='/home'>
+            <button className="myButton">View all our Guides</button>
+          </Link>
+        </div>
+      </div>
+        
     );
 
-    
   }
 }
 
