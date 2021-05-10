@@ -11,9 +11,9 @@ import FormControl from 'react-bootstrap/FormControl'
 import Row from "react-bootstrap/Row";
 import Button from 'react-bootstrap/Button'
 import Col from "react-bootstrap/Col";
-import CardDeck from 'react-bootstrap/CardDeck'
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
+// import CardDeck from 'react-bootstrap/CardDeck'
+// import Card from 'react-bootstrap/Card'
+// import Button from 'react-bootstrap/Button'
 import NavBar from './components/navbar.js'
 
 const style = {
